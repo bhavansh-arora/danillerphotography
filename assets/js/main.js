@@ -301,6 +301,7 @@
       cur = (n + slides.length) % slides.length;
       slides[cur].classList.add('is-on');
       if (dots[cur]) { void dots[cur].offsetWidth; dots[cur].classList.add('is-on'); }
+      const hc = $('[data-hero-count]'); if (hc) hc.textContent = String(cur + 1).padStart(2, '0');
       clearTimeout(timer); timer = setTimeout(() => go(cur + 1), 5500);
     };
     dots.forEach((d, i) => d.addEventListener('click', () => go(i)));

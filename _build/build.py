@@ -23,7 +23,7 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = os.path.join(ROOT, "_build", "pages")
 IMG = os.path.join(ROOT, "assets", "img")
-VER = "1.0.0"
+VER = "2.0.0"
 
 NAV = [
     ("city-hall", "city-hall.html", "City Hall", "ch-doors-burst"),
@@ -75,11 +75,13 @@ def header(active):
 <div class="transition" aria-hidden="true"><div class="transition__panel"><span>{LOGO}</span></div></div>
 <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
 <header class="hdr" data-hdr>
-  <a class="logo" href="index.html" aria-label="Daniller Photography, home">{LOGO}<span class="logo__word">Daniller<small>Photography &middot; San Francisco</small></span></a>
+  <div class="hdr__inner">
+  <a class="logo" href="index.html" aria-label="Daniller Photography, home">{LOGO}<span class="logo__word">Daniller <em>Photography</em></span></a>
   <nav class="hdr__nav" aria-label="Primary"><ul>{links}</ul></nav>
   <div class="hdr__actions">
     <a class="btn btn--sm btn--poppy hdr__cta" href="contact.html" data-magnetic><span>Check your date</span><i class="btn__dot" aria-hidden="true"></i></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn><span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__txt">Menu</span></button>
+  </div>
   </div>
 </header>
 <div class="menu" id="menu" aria-hidden="true" data-menu>
@@ -127,7 +129,7 @@ FOOTER = '''
   </div>
   <div class="ftr__grid wrap">
     <div class="ftr__col ftr__col--brand">
-      <a class="logo logo--light" href="index.html" aria-label="Daniller Photography, home">''' + LOGO + '''<span class="logo__word">Daniller<small>Photography &middot; San Francisco</small></span></a>
+      <a class="logo logo--light" href="index.html" aria-label="Daniller Photography, home">''' + LOGO + '''<span class="logo__word">Daniller <em>Photography</em></span></a>
       <p>Playful documentary photography for weddings, City Hall ceremonies and families, across the Bay Area, Los Angeles and wherever love takes you.</p>
     </div>
     <div class="ftr__col">
@@ -174,7 +176,7 @@ def page(meta, body):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{meta['desc']}">
-<meta name="theme-color" content="#15110E">
+<meta name="theme-color" content="#F5F0E8">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Daniller Photography">
 <meta property="og:title" content="{title}">
@@ -184,7 +186,7 @@ def page(meta, body):
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css?v={VER}">
 {HEAD_SCRIPT}
 {meta.get('head', '')}

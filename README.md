@@ -31,7 +31,8 @@ The footer newsletter form only shows a confirmation message. Connect it to her 
 
 ## Stack
 - GSAP 3.12.5, ScrollTrigger and Lenis 1.1.13 (bundled in `assets/vendor`)
-- Fonts from Google Fonts: Fraunces, Inter Tight and JetBrains Mono
+- Fonts from Google Fonts: Inter Tight (display and body), Instrument Serif (italic accents) and Geist Mono (labels)
+- Design system v2: ivory paper, espresso ink and one brick-red accent, floating pill header, framed hero with a "latest story" card, light editorial inner-page heroes
 - Supports reduced motion, keyboard navigation and screen-reader labels
 
 ## Confirm with Lydia before launch
