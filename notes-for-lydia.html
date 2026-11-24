@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Notes for Lydia | What We Built for Daniller Photography</title>
+<meta name="description" content="A walkthrough of the redesigned Daniller Photography website and how each change helps City Hall couples book.">
+<meta name="theme-color" content="#15110E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daniller Photography">
+<meta property="og:title" content="Notes for Lydia | What We Built for Daniller Photography">
+<meta property="og:description" content="A walkthrough of the redesigned Daniller Photography website and how each change helps City Hall couples book.">
+<meta property="og:image" content="assets/img/ch-doors-burst-1600.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+<script>(function(d){d.classList.replace('no-js','js');try{if(sessionStorage.getItem('dp-nav'))d.classList.add('is-entering');if(sessionStorage.getItem('dp-pre'))d.classList.add('no-pre')}catch(e){}})(document.documentElement)</script>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="page-notes" id="top">
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="transition" aria-hidden="true"><div class="transition__panel"><span><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><g fill="currentColor"><circle cx="24" cy="24" r="7"/><g class="logo__rays"><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(0 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(30 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(60 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(90 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(120 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(150 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(180 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(210 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(240 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(270 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(300 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(330 24 24)"/></g></g></svg></span></div></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<header class="hdr" data-hdr>
+  <a class="logo" href="index.html" aria-label="Daniller Photography, home"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><g fill="currentColor"><circle cx="24" cy="24" r="7"/><g class="logo__rays"><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(0 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(30 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(60 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(90 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(120 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(150 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(180 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(210 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(240 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(270 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(300 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(330 24 24)"/></g></g></svg><span class="logo__word">Daniller<small>Photography &middot; San Francisco</small></span></a>
+  <nav class="hdr__nav" aria-label="Primary"><ul><li><a href="city-hall.html" class="hdr__link">City Hall</a></li><li><a href="weddings.html" class="hdr__link">Weddings</a></li><li><a href="family.html" class="hdr__link">Family</a></li><li><a href="about.html" class="hdr__link">Meet Lydia</a></li><li><a href="kind-words.html" class="hdr__link">Kind Words</a></li><li><a href="faq.html" class="hdr__link">FAQ</a></li></ul></nav>
+  <div class="hdr__actions">
+    <a class="btn btn--sm btn--poppy hdr__cta" href="contact.html" data-magnetic><span>Check your date</span><i class="btn__dot" aria-hidden="true"></i></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn><span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span><span class="menu-btn__txt">Menu</span></button>
+  </div>
+</header>
+<div class="menu" id="menu" aria-hidden="true" data-menu>
+  <div class="menu__inner">
+    <div class="menu__preview" aria-hidden="true"><img src="assets/img/ch-doors-burst-800.webp" alt="" width="533" height="800"></div>
+    <nav class="menu__nav" aria-label="Menu"><ul>
+      <li><a href="index.html" class="menu__link" data-preview="assets/img/hero-jump-800.webp"><span class="menu__num">00</span><span class="menu__txt">Home</span></a></li>
+      <li><a href="city-hall.html" class="menu__link" data-preview="assets/img/ch-doors-burst-800.webp"><span class="menu__num">01</span><span class="menu__txt">City Hall</span></a></li><li><a href="weddings.html" class="menu__link" data-preview="assets/img/nicasio-twirl-800.webp"><span class="menu__num">02</span><span class="menu__txt">Weddings</span></a></li><li><a href="family.html" class="menu__link" data-preview="assets/img/fam-jump-cat-800.webp"><span class="menu__num">03</span><span class="menu__txt">Family</span></a></li><li><a href="about.html" class="menu__link" data-preview="assets/img/lydia-cats-800.webp"><span class="menu__num">04</span><span class="menu__txt">Meet Lydia</span></a></li><li><a href="kind-words.html" class="menu__link" data-preview="assets/img/dance-circle-800.webp"><span class="menu__num">05</span><span class="menu__txt">Kind Words</span></a></li><li><a href="faq.html" class="menu__link" data-preview="assets/img/ch-staircase-800.webp"><span class="menu__num">06</span><span class="menu__txt">FAQ</span></a></li>
+      <li><a href="contact.html" class="menu__link menu__link--cta" data-preview="assets/img/lips-mural-800.webp"><span class="menu__num">07</span><span class="menu__txt">Let&rsquo;s do this</span></a></li>
+    </ul></nav>
+    <div class="menu__foot">
+      <div><span class="label">Say hello</span><a href="mailto:lydia@danillerphotography.com">lydia@danillerphotography.com</a></div>
+      <div><span class="label">Based in</span><span>San Francisco &amp; Los Angeles</span></div>
+      <div><span class="label">Follow</span><span><a href="https://www.instagram.com/danillerphotography/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.facebook.com/DanillerPhotography/" target="_blank" rel="noopener">Facebook</a></span></div>
+    </div>
+  </div>
+</div>
+<a class="mobile-cta" href="contact.html" data-mobile-cta><span>Check your date</span><em>Reply within 24h</em></a>
+
+<main id="main">
+<section class="phero" style="padding-bottom:clamp(64px,8vw,120px)">
+  <div class="wrap">
+    <div class="phero__crumbs label" data-reveal><span>Prepared by Code Bunny</span><span>/</span><span style="color:var(--paper)">For Lydia Daniller</span></div>
+    <div class="phero__top">
+      <h1 class="phero__title" data-split>Built for how couples <em class="accent">actually book.</em></h1>
+      <div class="badge" data-reveal>
+        <svg class="badge__ring" viewBox="0 0 160 160" aria-hidden="true"><defs><path id="ringn" d="M80,80 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/></defs><text><textPath href="#ringn">Upgrades &bull; For Daniller Photography &bull;</textPath></text></svg>
+        <span class="badge__core">9<small>upgrades</small></span>
+      </div>
+    </div>
+    <div class="phero__intro">
+      <p class="lede lede--wide" data-reveal>Hi Lydia! Your current site has a lovely personal voice. We kept every bit of it and rebuilt the experience around one goal: turning quiet City Hall browsers into booked dates.</p>
+      <div data-reveal style="--d:.1s">
+        <p style="color:var(--muted-light);max-width:48ch">Below is each upgrade, where to see it, and why it matters for your enquiries. Everything is live in this preview; click around.</p>
+        <div class="btn-row mt-m"><a class="btn btn--poppy" href="city-hall.html" data-magnetic><span>Start with City Hall</span><i class="btn__dot"></i></a><a class="btn btn--ghost" style="color:var(--paper)" href="index.html">See the homepage</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="upgrades">
+  <div class="wrap">
+    <div class="shead" data-line><span class="label"><i class="dot"></i>The City Hall booking journey</span><span class="label">Upgrades 01&ndash;05</span></div>
+    <div class="note-list">
+      <article class="note note--ink" data-reveal>
+        <span class="note__n">01</span><h3>Interactive collection builder</h3>
+        <p>Couples tap I, II, III or IV and instantly see images, investment, time and what&rsquo;s included, with matching photos. One tap books that exact collection.</p>
+        <p class="note__why"><b>Why it helps:</b> City Hall couples plan fast and compare on price and time. Letting them self-select means fewer &ldquo;what&rsquo;s included?&rdquo; emails and warmer, ready-to-book enquiries.</p>
+        <a class="link" href="city-hall.html#collections" style="color:var(--paper)">See it live <svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </article>
+      <article class="note" data-reveal style="--d:.08s">
+        <span class="note__n">02</span><h3>A smarter enquiry flow</h3>
+        <p>Four short steps with a live summary and estimate. The date, collection and guest count chosen anywhere on the site carry straight in.</p>
+        <p class="note__why"><b>Why it helps:</b> One question per screen feels effortless on a phone, and every enquiry reaches you with the date, collection, guests and location already filled in.</p>
+        <a class="link" href="contact.html?type=cityhall&amp;collection=II">Try it pre-filled <svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </article>
+      <article class="note" data-reveal>
+        <span class="note__n">03</span><h3>An insider&rsquo;s map of City Hall</h3>
+        <p>Six signature spots (the gilded doors, Grand Staircase, Mayor&rsquo;s Balcony and more), each with your photo and an insider tip.</p>
+        <p class="note__why"><b>Why it helps:</b> Your 100+ ceremonies are your biggest advantage. This puts that expertise on show, and gives Google rich, specific content for &ldquo;SF City Hall wedding photographer&rdquo; searches.</p>
+        <a class="link" href="city-hall.html#spots">See the map <svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </article>
+      <article class="note" data-reveal style="--d:.08s">
+        <span class="note__n">04</span><h3>&ldquo;Your City Hall day&rdquo; timeline</h3>
+        <p>A sample 90-minute schedule, from hello on the steps to bubbly, including how you guide them through check-in.</p>
+        <p class="note__why"><b>Why it helps:</b> The unknowns of check-in and timing are what make couples hesitate. Showing the day removes that worry before they ever email.</p>
+        <a class="link" href="city-hall.html#day">See the timeline <svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </article>
+      <article class="note note--ink" data-reveal>
+        <span class="note__n">05</span><h3>A filterable City Hall gallery</h3>
+        <p>28 images sorted by Ceremony, Portraits, Guests, Details and Outside, with a full-screen viewer that swipes on mobile.</p>
+        <p class="note__why"><b>Why it helps:</b> Couples look for proof that matches their plans (&ldquo;will our 10 guests look good?&rdquo;). Filters get them there in one tap.</p>
+        <a class="link" href="city-hall.html#gallery" style="color:var(--paper)">Open the gallery <svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </article>
+      <article class="note" style="background:var(--poppy);color:var(--paper);--d:.08s" data-reveal>
+        <span class="note__n" style="color:var(--butter)">&rarr;</span><h3>The result</h3>
+        <p style="color:rgba(245,239,230,.9)">A couple can land on City Hall, choose a collection, see the spots, understand the day, and send a complete enquiry in about three minutes, without writing a single email from scratch.</p>
+      </article>
+    </div>
+
+    <div class="shead mt-xl" data-line><span class="label"><i class="dot"></i>Across the whole site</span><span class="label">Upgrades 06&ndash;09</span></div>
+    <div class="note-list">
+      <article class="note" data-reveal>
+        <span class="note__n">06</span><h3>&ldquo;Check your date&rdquo; is always one tap away</h3>
+        <p>In the header, a sticky bar on mobile, and quick date-check forms on the home, City Hall and Family pages.</p>
+        <p class="note__why"><b>Why it helps:</b> Most couples browse on their phones. The next step should always be within thumb reach.</p>
+      </article>
+      <article class="note" data-reveal style="--d:.08s">
+        <span class="note__n">07</span><h3>Reviews where decisions happen</h3>
+        <p>Your five testimonials now sit next to pricing and booking points, plus a dedicated Kind Words page with highlights.</p>
+        <p class="note__why"><b>Why it helps:</b> &ldquo;She knew all the picture-perfect spots inside SF City Hall&rdquo; does more selling beside the collections than on a separate page.</p>
+      </article>
+      <article class="note" data-reveal>
+        <span class="note__n">08</span><h3>Fast, findable, accessible</h3>
+        <p>Optimised WebP images in two sizes, descriptive titles and meta for every page, alt text on every photo, keyboard-friendly menus and galleries, and reduced-motion support.</p>
+        <p class="note__why"><b>Why it helps:</b> Faster pages keep mobile visitors around, and clear page titles help you show up for City Hall, Bay Area wedding and family searches.</p>
+      </article>
+      <article class="note" data-reveal style="--d:.08s">
+        <span class="note__n">09</span><h3>Your voice, louder</h3>
+        <p>The invisibility cloak, the stuffed pigeon, &ldquo;pucker up, buttercup&rdquo;, dancing with grandma: your own words, given the stage they deserve.</p>
+        <p class="note__why"><b>Why it helps:</b> Couples book you because you feel like a good friend. The design leans into that playful warmth instead of hiding it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--ink sec--round">
+  <div class="wrap">
+    <div class="shead" data-line><span class="label"><i class="dot"></i>Going live</span><span class="label">What happens next</span></div>
+    <div class="timeline timeline--4">
+      <span class="timeline__line" aria-hidden="true"></span>
+      <div class="tstep" data-reveal><span class="tstep__time">Step 1</span><h3>Your feedback</h3><p>Tell us what you love and what you&rsquo;d change. Copy, photos, colours: it&rsquo;s all adjustable.</p></div>
+      <div class="tstep" data-reveal style="--d:.08s"><span class="tstep__time">Step 2</span><h3>Connect the inbox</h3><p>The enquiry form gets wired straight to lydia@danillerphotography.com.</p></div>
+      <div class="tstep" data-reveal style="--d:.16s"><span class="tstep__time">Step 3</span><h3>Your best work</h3><p>We swap in your favourite recent galleries and full stories for each wedding.</p></div>
+      <div class="tstep" data-reveal style="--d:.24s"><span class="tstep__time">Step 4</span><h3>Launch</h3><p>Pointed at danillerphotography.com, with redirects so no existing link breaks.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr__cta wrap">
+    <div class="ftr__cta-l">
+      <p class="label label--light"><i class="dot"></i>Now booking 2026 &amp; 2027</p>
+      <a href="contact.html" class="ftr__big" data-cursor="Say hi">
+        <span class="ftr__big-line">Let&rsquo;s do</span>
+        <span class="ftr__big-line"><em>this.</em> <span class="ftr__arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></span>
+      </a>
+      <p class="ftr__sub">I create custom packages based on what you need and what&rsquo;s important to you.</p>
+    </div>
+    <div class="ftr__stack">
+      <div class="ftr__card">
+        <div class="ftr__card-img"><img src="assets/img/lydia-cats-1600.webp" srcset="assets/img/lydia-cats-800.webp 800w, assets/img/lydia-cats-1600.webp 1600w" sizes="120px" width="1000" height="668" alt="Lydia Daniller" loading="lazy" decoding="async"></div>
+        <div><h3>Every enquiry is read by me, <em>personally.</em></h3><p>Usually within 24 hours, if not sooner.</p></div>
+        <div class="btn-row"><a class="btn btn--poppy" href="contact.html" data-magnetic><span>Start your enquiry</span><i class="btn__dot"></i></a></div>
+        <div class="ftr__meta"><div><b>24h</b><span>reply time</span></div><div><b>100+</b><span>City Hall weddings</span></div><div><b>20 yrs</b><span>experience</span></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="ftr__strip" aria-hidden="true">
+    <div class="ftr__strip-track">
+      <figure><img src="assets/img/ch-doors-burst-1600.webp" srcset="assets/img/ch-doors-burst-800.webp 800w, assets/img/ch-doors-burst-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/groomsmen-jump-1600.webp" srcset="assets/img/groomsmen-jump-800.webp 800w, assets/img/groomsmen-jump-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/lips-mural-1600.webp" srcset="assets/img/lips-mural-800.webp 800w, assets/img/lips-mural-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/fam-jump-cat-1600.webp" srcset="assets/img/fam-jump-cat-800.webp 800w, assets/img/fam-jump-cat-1600.webp 1600w" sizes="220px" width="1500" height="1500" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/ch-chihuahuas-1600.webp" srcset="assets/img/ch-chihuahuas-800.webp 800w, assets/img/ch-chihuahuas-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/picnic-laugh-1600.webp" srcset="assets/img/picnic-laugh-800.webp 800w, assets/img/picnic-laugh-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/nicasio-twirl-1600.webp" srcset="assets/img/nicasio-twirl-800.webp 800w, assets/img/nicasio-twirl-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/cake-kid-1600.webp" srcset="assets/img/cake-kid-800.webp 800w, assets/img/cake-kid-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/ch-fistbump-1600.webp" srcset="assets/img/ch-fistbump-800.webp 800w, assets/img/ch-fistbump-1600.webp 1600w" sizes="220px" width="1500" height="938" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/red-umbrella-1600.webp" srcset="assets/img/red-umbrella-800.webp 800w, assets/img/red-umbrella-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/fam-upside-1600.webp" srcset="assets/img/fam-upside-800.webp 800w, assets/img/fam-upside-1600.webp 1600w" sizes="220px" width="1064" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/heart-mural-1600.webp" srcset="assets/img/heart-mural-800.webp 800w, assets/img/heart-mural-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/ch-doors-burst-1600.webp" srcset="assets/img/ch-doors-burst-800.webp 800w, assets/img/ch-doors-burst-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/groomsmen-jump-1600.webp" srcset="assets/img/groomsmen-jump-800.webp 800w, assets/img/groomsmen-jump-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/lips-mural-1600.webp" srcset="assets/img/lips-mural-800.webp 800w, assets/img/lips-mural-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/fam-jump-cat-1600.webp" srcset="assets/img/fam-jump-cat-800.webp 800w, assets/img/fam-jump-cat-1600.webp 1600w" sizes="220px" width="1500" height="1500" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/ch-chihuahuas-1600.webp" srcset="assets/img/ch-chihuahuas-800.webp 800w, assets/img/ch-chihuahuas-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/picnic-laugh-1600.webp" srcset="assets/img/picnic-laugh-800.webp 800w, assets/img/picnic-laugh-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/nicasio-twirl-1600.webp" srcset="assets/img/nicasio-twirl-800.webp 800w, assets/img/nicasio-twirl-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/cake-kid-1600.webp" srcset="assets/img/cake-kid-800.webp 800w, assets/img/cake-kid-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/ch-fistbump-1600.webp" srcset="assets/img/ch-fistbump-800.webp 800w, assets/img/ch-fistbump-1600.webp 1600w" sizes="220px" width="1500" height="938" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/red-umbrella-1600.webp" srcset="assets/img/red-umbrella-800.webp 800w, assets/img/red-umbrella-1600.webp 1600w" sizes="220px" width="1067" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/fam-upside-1600.webp" srcset="assets/img/fam-upside-800.webp 800w, assets/img/fam-upside-1600.webp 1600w" sizes="220px" width="1064" height="1600" alt="" loading="lazy" decoding="async"></figure><figure><img src="assets/img/heart-mural-1600.webp" srcset="assets/img/heart-mural-800.webp 800w, assets/img/heart-mural-1600.webp 1600w" sizes="220px" width="1500" height="1000" alt="" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+  <div class="ftr__grid wrap">
+    <div class="ftr__col ftr__col--brand">
+      <a class="logo logo--light" href="index.html" aria-label="Daniller Photography, home"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><g fill="currentColor"><circle cx="24" cy="24" r="7"/><g class="logo__rays"><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(0 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(30 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(60 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(90 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(120 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(150 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(180 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(210 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(240 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(270 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(300 24 24)"/><rect x="22.4" y="2" width="3.2" height="10" rx="1.6" transform="rotate(330 24 24)"/></g></g></svg><span class="logo__word">Daniller<small>Photography &middot; San Francisco</small></span></a>
+      <p>Playful documentary photography for weddings, City Hall ceremonies and families, across the Bay Area, Los Angeles and wherever love takes you.</p>
+    </div>
+    <div class="ftr__col">
+      <span class="label label--light">Explore</span>
+      <ul><li><a href="city-hall.html">City Hall</a></li><li><a href="weddings.html">Weddings</a></li><li><a href="family.html">Family</a></li><li><a href="about.html">Meet Lydia</a></li><li><a href="kind-words.html">Kind Words</a></li><li><a href="faq.html">FAQ</a></li></ul>
+    </div>
+    <div class="ftr__col">
+      <span class="label label--light">Contact</span>
+      <ul><li><a href="mailto:lydia@danillerphotography.com">lydia@danillerphotography.com</a></li><li><a href="contact.html">Enquiry form</a></li><li><a href="https://www.instagram.com/danillerphotography/" target="_blank" rel="noopener">Instagram &#8599;</a></li><li><a href="https://www.facebook.com/DanillerPhotography/" target="_blank" rel="noopener">Facebook &#8599;</a></li></ul>
+    </div>
+    <div class="ftr__col ftr__col--news">
+      <span class="label label--light">Occasional letters</span>
+      <p>Updates and special offerings, no spam.</p>
+      <form class="news" data-news novalidate>
+        <label class="sr-only" for="news-email">Email address</label>
+        <input id="news-email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+        <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <span class="news__msg" role="status" aria-live="polite"></span>
+      </form>
+    </div>
+  </div>
+  <div class="ftr__word" aria-hidden="true">Daniller</div>
+  <div class="ftr__base wrap">
+    <span>&copy; <span data-year>2026</span> Daniller Photography</span>
+    <span>San Francisco Bay Area &middot; Los Angeles &middot; Worldwide</span>
+    <a href="#top" data-to-top>Back to top &uarr;</a>
+  </div>
+</footer>
+
+<div class="lightbox" data-lightbox-ui aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lightbox__close" type="button" aria-label="Close" data-lb-close>&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image" data-lb-prev>&larr;</button>
+  <figure class="lightbox__fig"><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image" data-lb-next>&rarr;</button>
+  <span class="lightbox__count" data-lb-count></span>
+</div>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/js/main.js?v=1.0.0"></script>
+</body>
+</html>
