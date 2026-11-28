@@ -23,7 +23,7 @@ from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = os.path.join(ROOT, "_build", "pages")
 IMG = os.path.join(ROOT, "assets", "img")
-VER = "3.0.0"
+VER = "3.0.1"
 SITE_URL = "https://danillerphotography.codebunny.net/"
 
 # Site config. While formEndpoint is empty, the enquiry opens a pre-filled email.
