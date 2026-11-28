@@ -106,7 +106,7 @@ og: fam-golden-gate
       <button class="filter" type="button" data-filter="home" aria-pressed="false">At home</button>
       <button class="filter" type="button" data-filter="bump" aria-pressed="false">Bumps &amp; babies</button>
     </div>
-    <div class="masonry" id="f-gallery" data-gallery>
+    <div class="masonry" id="f-gallery" data-gallery data-limit="12">
       <figure data-tags="outdoors" data-cap="Jump!">{{img fam-jump-cat|Two girls jumping while a cat watches|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="outdoors" data-cap="Shoulder rides">{{img fam-shoulders|A dad laughing with a toddler on his shoulders|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="bump outdoors" data-cap="Beach bump">{{img fam-beach-bump|An expecting couple on the beach|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
@@ -133,22 +133,29 @@ og: fam-golden-gate
   </div>
 </section>
 
-<!-- 05 CTA -->
-<section class="sec sec--poppy" style="padding-bottom:calc(var(--sec) + 40px)">
+<!-- 05 PLAYDATE PLANNER -->
+<section class="sec sec--poppy" id="playdate" style="padding-bottom:calc(var(--sec) + 40px)">
   <div class="wrap">
-    <div class="cta-big">
-      <div class="cta-big__float" style="left:0;top:2%">{{img fam-shoulders||sizes="190px"}}</div>
-      <div class="cta-big__float" style="right:0;top:8%">{{img fam-tower||sizes="190px"}}</div>
-      <span class="label"><i class="dot"></i>Weekends book first</span>
-      <h2 class="h-xl" data-split>Book a family <em>playdate.</em></h2>
-      <p class="lede" style="color:rgba(245,239,230,.9);max-width:44ch" data-reveal>Pick a date and how you&rsquo;d like to play. II&rsquo;ll reply within a day with ideas for the perfect spot.rsquo;ll reply within 24 hours with ideas for the perfect spot.</p>
-      <form class="datecheck" action="contact.html" method="get" data-reveal style="width:min(100%, 900px)">
-        <input type="hidden" name="type" value="family">
-        <div class="field"><label for="f-date">Preferred date</label><input id="f-date" type="date" name="date"></div>
-        <div class="field"><label for="f-loc">Where</label><select id="f-loc" name="location"><option value="Out exploring">Out exploring</option><option value="At home">At home</option><option value="">Not sure yet</option></select></div>
-        <div class="field"><label for="f-guests">Family size</label><select id="f-guests" name="guests"><option value="">Not sure yet</option><option>Under 10</option><option>10&ndash;30</option></select></div>
-        <button class="btn" type="submit" data-magnetic><span>Continue</span><i class="btn__dot"></i></button>
-      </form>
+    <div class="shead" data-line><span class="label"><i class="dot"></i>(05) &mdash; Plan a playdate</span><span class="label">Pick your playground</span></div>
+    <div class="pd" data-playdate data-note="Playdate planner||Families pick a playground and a date, and see a mini moodboard from Lydia&rsquo;s own family galleries, her words for that kind of session, and when the soft golden light starts that day. The choice travels into the enquiry.">
+      <div class="pd__l">
+        <h2 class="h-xl" data-split>Book a family <em>playdate.</em></h2>
+        <p class="lede mt-m" style="color:rgba(245,239,230,.9)" data-reveal>Pick a playground and a date. You&rsquo;ll see the kind of pictures we can make there, and when the light is softest. I&rsquo;ll reply within 24 hours with ideas for the perfect spot.</p>
+        <fieldset class="pd__vibes" data-reveal>
+          <legend class="label">Where shall we play?</legend>
+          <label class="pd__vibe"><input type="radio" name="pd-vibe" value="bay" data-label="By the bay" data-outdoor="1" checked><span><span class="pd__thumb">{{img fam-gg-swing||sizes="64px"}}</span><span><b>By the bay</b><small>Beach, bridge &amp; boardwalk</small></span></span></label><label class="pd__vibe"><input type="radio" name="pd-vibe" value="park" data-label="Park & playground" data-outdoor="1"><span><span class="pd__thumb">{{img fam-dad-girl||sizes="64px"}}</span><span><b>Park &amp; playground</b><small>Swings, lawns &amp; dogs</small></span></span></label><label class="pd__vibe"><input type="radio" name="pd-vibe" value="city" data-label="Around the city" data-outdoor="1"><span><span class="pd__thumb">{{img fam-muni||sizes="64px"}}</span><span><b>Around the city</b><small>Murals, the Muni &amp; stoops</small></span></span></label><label class="pd__vibe"><input type="radio" name="pd-vibe" value="home" data-label="At home" data-outdoor="0"><span><span class="pd__thumb">{{img fam-newborn-dog||sizes="64px"}}</span><span><b>At home</b><small>Couch, hallway &amp; cuddles</small></span></span></label>
+        </fieldset>
+        <div class="pd__row" data-reveal>
+          <div class="field"><label for="pd-date">Preferred date</label><input id="pd-date" type="date" name="pd-date"></div>
+          <a class="btn btn--light" data-pd="cta" href="contact.html?type=family" data-magnetic><span>Plan this playdate</span><i class="btn__dot"></i></a>
+        </div>
+        <p class="pd__light" data-pd="light" aria-live="polite">Pick a date to see when the golden light starts that day.</p>
+      </div>
+      <div class="pd__r" data-reveal style="--d:.1s">
+        <div class="pd__boards"><div class="pd__board is-on" data-pd-board="bay"><figure>{{img fam-gg-swing|Parents swinging their child near the Golden Gate Bridge|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-beach-bump|An expecting couple on the beach|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-boardwalk|A girl carrying her little brother on a boardwalk|sizes="(max-width: 900px) 50vw, 30vw"}}</figure></div><div class="pd__board" data-pd-board="park"><figure>{{img fam-dad-girl|A dad and daughter laughing at a playground|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-dog-lawn|Siblings lying on the lawn with their dog|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-park|A family hugging in a park|sizes="(max-width: 900px) 50vw, 30vw"}}</figure></div><div class="pd__board" data-pd-board="city"><figure>{{img fam-muni|A curly-haired boy looking out of a Muni window|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-tower|A family stacked into a human tower against a blue wall|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-jump-cat|Two girls jumping while a cat watches|sizes="(max-width: 900px) 50vw, 30vw"}}</figure></div><div class="pd__board" data-pd-board="home"><figure>{{img fam-newborn-dog|Parents with their newborn and dog on the sofa|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-hallway|A toddler toddling down a hallway|sizes="(max-width: 900px) 50vw, 30vw"}}</figure><figure>{{img fam-mom-girl|A mother and daughter laughing together|sizes="(max-width: 900px) 50vw, 30vw"}}</figure></div></div>
+        <p class="pd__quote" data-pd-text="bay">&ldquo;We&rsquo;ll pick a spot that&rsquo;s fun to explore. Running, climbing, skipping stones: you play, I document the adventure.&rdquo;</p><p class="pd__quote" data-pd-text="park" hidden>&ldquo;I bring a sense of play and silliness to create authentic smiles all around. I have a few tricks up my sleeve to disarm the shy.&rdquo;</p><p class="pd__quote" data-pd-text="city" hidden>&ldquo;I organise family photo shoots like playdates. We&rsquo;ll pick a spot that&rsquo;s fun to explore, and I&rsquo;ll document you playing and adventuring as a family.&rdquo;</p><p class="pd__quote" data-pd-text="home" hidden>&ldquo;Kids feel most comfortable at home. I might crawl under a table to join your little one, or kick a ball outside with them.&rdquo;</p>
+        <p class="label pd__sig">&mdash; Lydia</p>
+      </div>
     </div>
   </div>
 </section>

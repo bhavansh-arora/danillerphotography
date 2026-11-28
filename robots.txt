@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /notes-for-lydia.html
+
+Sitemap: https://danillerphotography.codebunny.net/sitemap.xml

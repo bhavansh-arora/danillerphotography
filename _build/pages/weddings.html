@@ -68,7 +68,8 @@ og: alps
       <h2 class="h-xl" data-split>Twelve days <em class="accent">we&rsquo;ll never forget.</em></h2>
       <p class="lede muted" data-reveal>Redwoods and rooftops, cable cars and cow bells. Every one completely different, every one completely them.</p>
     </div>
-    <div class="cards cards--offset" data-gallery>
+    <p class="label swipe-hint show-m" aria-hidden="true">Swipe for more stories &rarr;</p>
+    <div class="cards cards--offset cards--swipe-m" data-gallery>
       <figure class="card" id="alps" data-cap="Austrian Alps &middot; Tyrol, Austria" data-reveal><div class="media zoom">{{img alps|Austrian Alps wedding|sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw"}}</div><span class="card__tag pill pill--solid">Destination</span><figcaption class="card__meta"><div><h3 class="card__title">Austrian Alps</h3><p class="card__sub">Tyrol, Austria &middot; lederhosen included</p></div><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></figcaption></figure>
       <figure class="card" id="nicasio" data-cap="Rancho Nicasio &middot; West Marin" data-reveal><div class="media zoom">{{img nicasio-twirl|Rancho Nicasio wedding|sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw"}}</div><span class="card__tag pill pill--solid">Ranch</span><figcaption class="card__meta"><div><h3 class="card__title">Rancho Nicasio</h3><p class="card__sub">West Marin</p></div><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></figcaption></figure>
       <figure class="card" id="city-club" data-cap="The City Club &middot; San Francisco" data-reveal><div class="media zoom">{{img city-club|The City Club San Francisco wedding|sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw"}}</div><span class="card__tag pill pill--solid">Rooftop</span><figcaption class="card__meta"><div><h3 class="card__title">The City Club</h3><p class="card__sub">Financial District, San Francisco</p></div><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></figcaption></figure>
@@ -85,7 +86,7 @@ og: alps
   </div>
 </section>
 
-<!-- 03 NUMBERS -->
+<!-- 03 NUMBERS + COVERAGE SIZER -->
 <section class="sec sec--ink sec--round" id="numbers">
   <div class="wrap">
     <div class="shead" data-line><span class="label"><i class="dot"></i>(03) &mdash; What to expect</span><span class="label">The honest numbers</span></div>
@@ -93,13 +94,23 @@ og: alps
       <div>
         <h2 class="h-xl" data-split>Every image, <em class="accent">edited by hand.</em></h2>
         <p class="lede mt-m" style="color:var(--muted-light)" data-reveal>I lightly edit and enhance your whole batch so it looks its best while staying natural. I&rsquo;ll even remove the random cilantro leaf between your teeth.</p>
-        <div class="btn-row mt-l" data-reveal><a class="btn btn--poppy" href="contact.html?type=wedding" data-magnetic><span>Get a custom quote</span><i class="btn__dot"></i></a></div>
+        <div class="bento" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:clamp(32px,4vw,56px)">
+          <div class="tile tile--butter" data-reveal><span class="label">Delivery</span><div><div class="tile__num">4&ndash;8<sup>wks</sup></div><p class="mt-s">depending on the season.</p></div></div>
+          <div class="tile tile--img" data-reveal style="--d:.08s">{{img lake-dock|A couple sitting at the end of a dock by a lake|sizes="(max-width: 640px) 50vw, 25vw"}}<span class="label">Peace of mind</span><div><p style="font-family:var(--serif);font-size:clamp(26px,2.4vw,38px);line-height:1;letter-spacing:-.03em;max-width:none">Backup gear for everything.</p></div></div>
+        </div>
       </div>
-      <div class="bento" style="grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0">
-        <div class="tile tile--poppy" data-reveal><span class="label">Per hour</span><div><div class="tile__num">~<span data-count="75">75</span></div><p class="mt-s">images on average, only the best.</p></div></div>
-        <div class="tile" style="background:var(--ink-2);border:1px solid var(--line-light);--d:.08s" data-reveal><span class="label">6-hour wedding</span><div><div class="tile__num"><span data-count="450">450</span><sup>+</sup></div><p class="mt-s" style="color:var(--muted-light)">images in your private gallery.</p></div></div>
-        <div class="tile tile--butter" data-reveal><span class="label">Delivery</span><div><div class="tile__num">4&ndash;8<sup>wks</sup></div><p class="mt-s">depending on the season.</p></div></div>
-        <div class="tile tile--img" data-reveal>{{img lake-dock|A couple sitting at the end of a dock by a lake|sizes="(max-width: 640px) 50vw, 25vw"}}<span class="label">Peace of mind</span><div><p style="font-family:var(--serif);font-size:clamp(26px,2.4vw,38px);line-height:1;letter-spacing:-.03em;max-width:none">Backup gear for everything.</p></div></div>
+      <div class="cov" data-coverage data-reveal data-note="Coverage sizer||Drag to choose hours and watch the image count build, using Lydia&rsquo;s own figure of about 75 edited images an hour (a 6-hour wedding is around 450). The chosen hours travel into the enquiry.">
+        <div class="cov__top"><span class="label"><i class="dot"></i>Size your day</span><span class="label">~75 images an hour</span></div>
+        <div class="cov__out">
+          <div><span class="cov__big" data-cov="images">450</span><span class="cov__unit">edited images, give or take</span></div>
+          <div class="cov__hrs"><b data-cov="hours">6</b><span data-cov="unit">hours</span></div>
+        </div>
+        <label class="sr-only" for="cov-range">Hours of coverage</label>
+        <input class="cov__range" id="cov-range" type="range" min="2" max="10" step="1" value="6">
+        <div class="cov__scale" aria-hidden="true"><span>2h</span><span>4h</span><span>6h</span><span>8h</span><span>10h</span></div>
+        <div class="cov__dots" data-cov-dots aria-hidden="true"></div>
+        <p class="cov__key">Each dot is about 25 photos. Every one hand edited and delivered in a private online gallery, with printing built in.</p>
+        <a class="btn btn--poppy" data-cov="cta" href="contact.html?type=wedding&amp;hours=6%20hours" data-magnetic><span data-cov="ctatxt">Ask about 6 hours</span><i class="btn__dot"></i></a>
       </div>
     </div>
   </div>
@@ -117,7 +128,7 @@ og: alps
       <button class="filter" type="button" data-filter="party" aria-pressed="false">Party</button>
       <button class="filter" type="button" data-filter="details" aria-pressed="false">Details</button>
     </div>
-    <div class="masonry" id="w-gallery" data-gallery>
+    <div class="masonry" id="w-gallery" data-gallery data-limit="12">
       <figure data-tags="ready" data-cap="Getting ready">{{img tattoo-dress|A bride with back tattoos getting dressed|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="portraits" data-cap="Golden hour">{{img wildflowers|A couple among wildflowers|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="party" data-cap="The hora">{{img chair-lift|Newlyweds lifted on chairs|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
@@ -126,7 +137,7 @@ og: alps
       <figure data-tags="ready" data-cap="Dad fixes the tie">{{img tie-dad|A father helping his son with a tie|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="party" data-cap="Floor show">{{img dancefloor-floor|A guest doing the worm on the dance floor|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="portraits" data-cap="Into the surf">{{img bride-surf|A bride running into the waves|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
-      <figure data-tags="details" data-cap="Lavender &amp; rings">{{img marigold-jar|A jar of orange flowers on a table|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
+      <figure data-tags="details" data-cap="Marigolds on the table">{{img marigold-jar|A jar of orange flowers on a table|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="party" data-cap="Confetti exit">{{img confetti-exit|A couple exiting through confetti|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="portraits" data-cap="Saree &amp; sea">{{img sari|A couple touching foreheads by the water|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>
       <figure data-tags="party" data-cap="Dads on the dance floor">{{img dads-dance|Dads dancing together|sizes="(max-width: 900px) 50vw, 33vw"}}</figure>

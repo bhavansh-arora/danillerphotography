@@ -6,7 +6,8 @@ body: page-home
 og: hero-jump
 -->
 <div class="preloader" aria-hidden="true">
-  <div class="preloader__word"><span>D</span><span>a</span><span>n</span><span>i</span><span>l</span><span>l</span><span>e</span><span>r</span><span class="it">.</span></div>
+  <div class="preloader__inner"><span class="preloader__mark">{{logo}}</span>
+  <div class="preloader__word"><span>D</span><span>a</span><span>n</span><span>i</span><span>l</span><span>l</span><span>e</span><span>r</span><span class="it">.</span></div></div>
   <span class="label preloader__tag">Playful documentary photography &middot; SF</span>
   <div class="preloader__count"><span>000</span></div>
   <div class="preloader__bar"></div>
@@ -89,7 +90,7 @@ og: hero-jump
       </div>
     </div>
 
-    <div class="bento">
+    <div class="bento" data-note="Proof in seconds||20 years, 100+ City Hall weddings, prices from $1,200 and a 24-hour reply: the facts couples look for, visible on the first scroll instead of buried in paragraphs.">
       <div class="tile tile--ink" data-reveal>
         <div class="tile__top"><span class="label">Experience</span><span class="pill" style="border-color:var(--line-light)">SF &amp; beyond</span></div>
         <div><div class="tile__num"><span data-count="20">20</span><sup>yrs</sup></div><p class="mt-s" style="color:var(--muted-light)">behind the camera in San Francisco and around the world.</p></div>
@@ -155,7 +156,7 @@ og: hero-jump
 </section>
 
 <!-- ============ 03 CITY HALL RAIL ============ -->
-<section class="sec sec--ink sec--round hrail" data-hrail id="city-hall" style="padding-bottom:clamp(64px,7vw,110px)">
+<section class="sec sec--ink sec--round hrail" data-hrail id="city-hall" style="padding-bottom:clamp(64px,7vw,110px)" data-note="The City Hall specialist, front and centre||Lydia&rsquo;s biggest edge (100+ City Hall weddings) now has its own sideways-scrolling tour on the homepage, ending in the collections. On the old site it sat several clicks deep.">
   <div class="wrap"><div class="shead" data-line><span class="label"><i class="dot"></i>(03) &mdash; The City Hall specialist</span><span class="label">Six favourite corners</span></div></div>
   <div class="hrail__track">
     <div class="spot spot--intro">
@@ -221,7 +222,7 @@ og: hero-jump
       <h2 class="h-xl" data-split>From the Alps <em class="accent">to the Presidio.</em></h2>
       <p class="lede muted" data-reveal>Lederhosen in Tyrol, mist under an oak tree, a cable car to Baker Beach. Hover a story, then step inside.</p>
     </div>
-    <div class="hlist" data-hlist>
+    <div class="hlist" data-hlist data-note="Love stories with previews||Each wedding is one row; on a computer a photo follows the cursor as you hover. Every row opens that story on the Weddings page.">
       <a class="hlist__row" href="weddings.html#alps" data-img="assets/img/alps-800.webp" data-reveal><span class="hlist__num">01</span><span class="hlist__name">Austrian Alps</span><span class="hlist__loc">Tyrol, Austria</span><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
       <a class="hlist__row" href="weddings.html#nicasio" data-img="assets/img/nicasio-twirl-800.webp" data-reveal><span class="hlist__num">02</span><span class="hlist__name">Rancho Nicasio</span><span class="hlist__loc">West Marin</span><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
       <a class="hlist__row" href="weddings.html#city-club" data-img="assets/img/city-club-800.webp" data-reveal><span class="hlist__num">03</span><span class="hlist__name">The City Club</span><span class="hlist__loc">San Francisco</span><span class="circle-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
@@ -323,12 +324,13 @@ og: hero-jump
       <span class="label"><i class="dot"></i>2026 &amp; 2027 dates are filling</span>
       <h2 class="h-display" data-split>Is your date<br><em>still free?</em></h2>
       <p class="lede" style="color:rgba(245,239,230,.9);max-width:44ch" data-reveal>Pop in your date and occasion. You&rsquo;ll land on a short enquiry with everything pre-filled, and hear back within 24 hours.</p>
-      <form class="datecheck" action="contact.html" method="get" data-reveal style="width:min(100%, 900px)">
+      <form class="datecheck" action="contact.html" method="get" data-reveal data-datecheck style="width:min(100%, 900px)" data-note="Date check||Occasion, date and guests in one line. Picking a date shows the day, how many days to go and that evening&rsquo;s sunset; &ldquo;Check my date&rdquo; opens the enquiry with all three already filled in.">
         <div class="field"><label for="dc-type">Occasion</label><select id="dc-type" name="type"><option value="cityhall">City Hall wedding</option><option value="wedding">Wedding</option><option value="elopement">Elopement</option><option value="family">Family session</option><option value="event">Other event</option></select></div>
         <div class="field"><label for="dc-date">Date</label><input id="dc-date" type="date" name="date"></div>
         <div class="field"><label for="dc-guests">Guests</label><select id="dc-guests" name="guests"><option value="">Not sure yet</option><option>Just us two</option><option>Under 10</option><option>10&ndash;30</option><option>30&ndash;80</option><option>80&ndash;150</option><option>150+</option></select></div>
         <button class="btn" type="submit" data-magnetic><span>Check my date</span><i class="btn__dot"></i></button>
       </form>
+      <p class="dc-out" data-dc-out data-empty="Pick a date to see how many days to go, and that evening&rsquo;s sunset.">Pick a date to see how many days to go, and that evening&rsquo;s sunset.</p>
     </div>
   </div>
 </section>

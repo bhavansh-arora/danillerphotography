@@ -28,11 +28,12 @@ og: lips-mural
 
 <section class="sec sec--paper2" id="enquire" style="padding-top:clamp(48px,6vw,96px)">
   <div class="wrap">
-    <div class="enq" data-enquiry>
+    <div class="enq" data-enquiry data-note="One enquiry that already knows the answers||Four short steps with a live summary and estimate. Anything chosen elsewhere on the site (date, collection, guests, ceremony time, the day planner, the coverage sizer or the playdate planner) arrives already filled in, along with which tool they used.">
       <div class="enq__card">
         <div class="flex-between" style="margin-bottom:14px;align-items:center"><span class="label" data-enq-steplabel>Step 1 of 4</span><span class="label"><i class="dot"></i>About 2 minutes</span></div>
         <div class="enq__progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <form novalidate data-endpoint="">
+          <input type="hidden" name="time"><input type="hidden" name="source">
           <!-- STEP 1 -->
           <fieldset class="enq__step is-on" style="border:0;padding:0;margin:0">
             <legend class="sr-only">Occasion</legend>
@@ -71,6 +72,7 @@ og: lips-mural
               <label class="choice"><input type="radio" name="hours" value="4 hours"><span><b>4 hrs</b><small>~300 images</small></span></label>
               <label class="choice"><input type="radio" name="hours" value="6 hours"><span><b>6 hrs</b><small>~450 images</small></span></label>
               <label class="choice"><input type="radio" name="hours" value="8 hours"><span><b>8 hrs</b><small>~600 images</small></span></label>
+              <label class="choice"><input type="radio" name="hours" value="10 hours"><span><b>10 hrs</b><small>~750 images</small></span></label>
               <label class="choice"><input type="radio" name="hours" value="Not sure yet"><span><b>Not sure</b><small>Help me decide</small></span></label>
             </div>
             <div class="choices" data-for="family" hidden>
@@ -91,6 +93,7 @@ og: lips-mural
               <div class="field full"><label for="e-msg">Tell me about your plans</label><textarea id="e-msg" name="message" placeholder="Who&rsquo;s coming, what you&rsquo;re most excited about, any moments I can&rsquo;t miss&hellip;"></textarea></div>
             </div>
           </fieldset>
+          <p class="enq__nojs">This form needs JavaScript to send. Please email <a href="mailto:lydia@danillerphotography.com">lydia@danillerphotography.com</a> with your date and plans, and I&rsquo;ll reply within 24 hours.</p>
           <p class="enq__err" role="alert"></p>
           <div class="enq__nav">
             <button class="enq__back" type="button" data-enq-back hidden>&larr; Back</button>
@@ -112,6 +115,7 @@ og: lips-mural
           <div><dt>Date</dt><dd data-sum="date" class="empty">&mdash;</dd></div>
           <div><dt>Location</dt><dd data-sum="where" class="empty">&mdash;</dd></div>
           <div><dt>Guests</dt><dd data-sum="guests" class="empty">&mdash;</dd></div>
+          <div hidden><dt>Ceremony</dt><dd data-sum="time" class="empty">&mdash;</dd></div>
           <div><dt>Coverage</dt><dd data-sum="coverage" class="empty">&mdash;</dd></div>
           <div><dt>Images</dt><dd data-sum="images">&mdash;</dd></div>
           <div><dt>Delivery</dt><dd data-sum="delivery">&mdash;</dd></div>
